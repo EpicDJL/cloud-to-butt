@@ -6,9 +6,8 @@ function walk(node)
 	// http://is.gd/mwZp7E
 	
 	var child, next;
-	function makeLowercase() {input = input.lowercase
-	}
-	if (node.tagName.toLowerCase() == 'input.lowercase' || node.tagName.toLowerCase() == 'textarea'
+	
+	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
 	    || node.classList.indexOf('ace_editor') > -1) {
 		return;
 	}
@@ -37,9 +36,7 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bE\b/g, "3");
 	v = v.replace(/\be\b/g, "3");
+	
 	textNode.nodeValue = v;
 }
-
-
