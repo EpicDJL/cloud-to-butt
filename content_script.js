@@ -37,8 +37,8 @@ function handleText(textNode)
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bfox news\b/g, "Trump News");
-	
+	v = v.replace(/\bE\b/g, "3");
+	v = v.replace(/\be\b/g, "3");
 	textNode.nodeValue = v;
 }
 
